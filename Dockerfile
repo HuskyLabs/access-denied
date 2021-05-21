@@ -13,7 +13,7 @@ CMD [ "cargo", "test", "--offline" ]
 
 FROM base AS builder
 
-RUN sudo apt-get install pkg-config
+RUN apt-get install pkg-config
 
 RUN cargo build --release --offline
 
